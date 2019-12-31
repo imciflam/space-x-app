@@ -1,6 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 // func component, sending props as parameters & destructuring them
 export default function LaunchItem({
@@ -26,7 +27,9 @@ export default function LaunchItem({
           </p>
         </div>
         <div className="col-md-3">
-          <button className="btn btn-secondary">Launch Details</button>
+          <button className="btn btn-secondary">
+            <Link to={`/launch/${flight_number}`}>Launch Details</Link>{" "}
+          </button>
         </div>
       </div>
     </div>
