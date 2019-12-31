@@ -1,2 +1,3 @@
 # space-x-app
-graphql app
+
+Basic React app which shows SpaceX information about their launches using GraphQL model.
