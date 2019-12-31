@@ -27,11 +27,11 @@ export class Launch extends Component {
     flight_number = parseInt(flight_number); // gaves error if not int
     return (
       <Fragment>
-        <Query query={LAUNCH_QUERY} variable={{ flight_number }}>
+        <Query query={LAUNCH_QUERY} variables={{ flight_number }}>
           {({ loading, error, data }) => {
             if (loading) return <h4>Loading..</h4>;
             if (error) console.log(error);
-            if (data) console.log(data);
+            console.log(data);
 
             return <h1>test</h1>;
           }}
