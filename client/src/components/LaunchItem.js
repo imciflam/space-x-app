@@ -20,9 +20,11 @@ export default function LaunchItem({
               {mission_name}
             </span>
           </h4>
-          <p>Date:</p>
+          <p>Date: {launch_date_local}</p>
         </div>
-        <div className="col-md-3">Launch Details</div>
+        <div className="col-md-3">
+          <button className="btn btn-secondary">Launch Details</button>
+        </div>
       </div>
     </div>
   );
