@@ -1,4 +1,5 @@
 import React from "react";
+// for
 import classNames from "classnames";
 
 // func component, sending props as parameters & destructuring them
@@ -10,7 +11,7 @@ export default function LaunchItem({
       <div className="row">
         <div className="col-md-9">
           <h4>
-            Mission:{" "}
+            Mission: {/*we want this class to kick in if value = true*/}
             <span
               className={classNames({
                 "text-success": launch_success,
